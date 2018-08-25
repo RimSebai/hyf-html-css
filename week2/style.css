@@ -3,7 +3,7 @@
     text-align: center;
     padding: 0%;
     font-family:sans-serif;
-     margin: 0%;
+    margin: 0%;
     }
 
 header{
@@ -15,11 +15,11 @@ header{
 }
 
 li:first-child{
-    width:48.8%;
+    width:calc(50% - 10px);
     height:410px;
     background-color: rgba(248, 125, 10, 0.959);
     }
-
+    
 #grid-floas{
     float:left;
    }
@@ -35,14 +35,14 @@ li:first-child{
 h2{
     height: 50px;
     padding:10px;
-    width:100%;clear: both;
     font-size: 28px;
+    clear: both;
     }
 
  .grid-item{
-    width:24%;height: 410px;
+    width:calc(25% - 10px);height: 410px;
      float:left;
-     padding: 10px;
+     padding:10px;
      background-color:gray;
      list-style-type: none;
      margin:5px;
@@ -50,81 +50,45 @@ h2{
     }
 
  p {
-     font-size:90%;font-family: cursive;padding: 10px;
-    }
-
- ul {
-     justify-content: space-between;
+     font-size:90%; padding: 10px;
     }
 
  h3 {
      font-size:20px;
     }
 
-
-    @media screen and (max-width:1024px){
-
-        li:nth-child(-n+2){
-            width:48.8%;
-            height:400px;
-            background-color: rgba(248, 125, 10, 0.959);
-            padding-top:40px;
-            }
-
-        .grid-item{
-            width:32.2%;
-            height:400px;
-            padding-top:20px;
-            overflow: scroll;
-           
-         }  
-
-        .grid-item img {
-            width:50%;
-            height:25%;
-            margin:20px 10px 10px 10px;
-        }
-    }
     @media screen and (max-width:768px){
     
             li:nth-child(-n+2){
-                width:48.4%;
+                width:calc(50% - 10px);
                 height:400px;
                 background-color: rgba(248, 125, 10, 0.959);
                 padding-top:40px;
                 }
     
             .grid-item{
-                width:32%;
+                width:calc(100% / 3 - 10px);
                 height:400px;
                 padding-top:20px;
                 overflow: scroll;
-               
              }  
     
             .grid-item img {
                 width:50%;
                 height:25%;
                 margin:20px 10px 10px 10px;
-
     }
 }
 
-    @media screen and (max-width:600px){
+     @media screen and (max-width:600px){
         li:first-child{
-            width:98%;
+            width:calc(100% - 5px);
             height:400px;
             background-color: rgba(248, 125, 10, 0.959);
             }   
-        li:nth-child(2){      
-             width:46.5%;
-            height:450px;
-            padding-top:20px;
-            background-color: gray;
-
-        }       
-        .grid-item{
-                width:46.5%;
+  
+        li:nth-child(2), .grid-item{
+                width:calc(100% / 2 - 10px);
                 height:450px;
                 padding-top:18px;
                 background-color: gray;
@@ -138,10 +102,15 @@ h2{
                  width:40%;height:40%;
                 }   
             }
-#grid-flex{
-    display: flex;
-    clear: both;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
+
+            /*flex grid*/
+            #grig-flex{
+                display: flex;
+            }
+            #grid-flex.grid-item{
+                 display: flex;
+                 clear: both;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 justify-content: left;
 }
