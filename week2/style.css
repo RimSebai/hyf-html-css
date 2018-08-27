@@ -121,7 +121,7 @@ h2{
               #grid-flex .grid-item:first-child {
                   width: calc(100% - 10px);} 
               #grid-flex .grid-item{
-                  width:calc(100% / 4 - 10px);
+                  width:calc(100% / 2 - 10px);
               }    
             }
 
