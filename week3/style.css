@@ -155,6 +155,7 @@ body{
      height:1px; 
      margin:30px 0 0 65%;
      position: absolute;
+     display:block;
  }
  
  /*____________cntroling______________________________*/
@@ -185,7 +186,9 @@ body{
         margin-left:10%;
         top:1px ;
     }
-
+    nav{
+    display:block;
+    }
     header, article{
         margin-left: 1px;
     }
